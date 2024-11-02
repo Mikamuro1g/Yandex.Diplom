@@ -2,10 +2,10 @@
 
 SELECT 
     c.login AS courier_login,
-    COUNT(o.id) AS orders_in_delivery
+    COUNT(*) AS orders_in_delivery
 FROM 
     "Couriers" c
-LEFT JOIN 
+INNER JOIN 
     "Orders" o ON c.id = o."courierId"
 WHERE 
     o."inDelivery" = true
