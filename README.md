@@ -9,6 +9,7 @@
 Для запуска требуются Python Packages:
   - Request
   - Pytest
+    
 Так же в файле configuration.py нужно заменить URL ссылку на ваш сервер.
 
 Запуск тестов из терминала PyCharm
